@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eeeee4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #232c2f;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.5em;
+            color: #6C63FF;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Darker shade of orange for hover effect */
+}
+
+.social-icons a {
+    color: orange;
+    text-decoration: none;
+    margin: 5px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff6600; /* Darker shade for hover */
+}
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px;
+            background: url('https://i.postimg.cc/8cTzwMGN/fa435c8f53e9d502476b411100345ef1.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero-content h2 {
+            font-size: 2.9em;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .hero-content button {
+            padding: 10px 20px;
+            background-color: darkblue;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+/* Portfolio Section Gradient Background */
+.section {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(to right, #353a3f, #232c2f); /* Gradient colors */
+    color: white; /* Text color to contrast the gradient */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+        .section {
+            padding: 100px;
+            text-align: center;
+            background-color: #232c2f;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .work-process {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .work-process div {
+            flex: 1;
+            padding: 20px;
+            background-color: grey;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    background-color: #344348;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px 50px;
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Portfolio Item */
+.portfolio-item {
+    text-align: center;
+    background-color:#d6f5ff;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Portfolio Item Hover Effect */
+.portfolio-item:hover {
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Item Images */
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Portfolio Item Text */
+.portfolio-item p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #232c2f;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unwana Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="https://wa.me/2349034826923">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Hello, I'm Unwana Monday Effiong</h2>
+            <p>A professional Graphic and Web designer based in Uyo, Nigeria. I have over 5 years of experience designing intuitive user interfaces.</p>        <a href="https://wa.me/2349034826923" target="_blank">
+            <button>Contact Me</button></a>
+        </div>
+    </div>
+
+    <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a professional Graphic and Web designer with over 5 years of experience in creating beautiful and user-friendly designs for clients worldwide. <br> Connect with me on my social media platforms.</p>
+    <div class="social-icons">
+        <a href="https://x.com/AmmaziB?t=Bxb-BpfOPRjQQpTEmDjxww&s=09" target="_blank">
+            <img src="https://i.postimg.cc/tTNxXXCR/c8d3d4d12a8ea35b58e35de9ec820a22.jpg" alt="Twitter" style="width: 30px; height: 30px; margin: 5px;">
+        </a>
+        <a href="www.linkedin.com/in/unwana-monday-effiong-68936b11a" target="_blank">
+            <img src="https://i.postimg.cc/JnLXVy8d/0c78d03cbfa19d5f3d7ad1b6e49f957b.jpg" alt="LinkedIn" style="width: 30px; height: 30px; margin: 5px;">
+        </a>
+              <a href="https://www.facebook.com/Amasi001" target="_blank">
+            <img src="https://i.postimg.cc/CxRkjTJJ/fea1971622e076ffe9e9019e174b174c.jpg" alt="Facebook" style="width: 30px; height: 30px; margin: 5px;">
+        </a>
+        <a href="https://wa.me/2349034826923" target="_blank">
+            <img src="https://i.postimg.cc/5y9FyZ6B/28f182f163b5983edc13bb0f9c4926fd.jpg" alt="Whatsapp" style="width: 30px; height: 30px; margin: 5px;">
+        </a>
+    </div>
+</section>
+
+    <section id="work-process" class="section">
+        <h2>Work Process</h2>
+        <div class="work-process">
+            <div>
+                <h3>1. Research</h3>
+                <p>Understand client needs and research solutions.</p>
+            </div>
+            <div>
+                <h3>2. Design</h3>
+                <p>Create beautiful, functional designs.</p>
+            </div>
+            <div>
+                <h3>3. Launch</h3>
+                <p>Deliver projects that exceed expectations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <h2>My Portfolios</h2>
+      <p>Explore my recent projects below.</p>
+      <div class="portfolio-grid">
+        <!-- Add multiple portfolio items -->
+        <div class="portfolio-item">
+          <img src="https://i.postimg.cc/Hkv3g9vv/IMG-20241210-001742.jpg" alt="Project 1">
+          <p>Project 1: E-commerce Website</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://i.postimg.cc/LshCYbZM/8234f3908e70f57e016932e8db7cbe3f.jpg" alt="Project 2">
+          <p>Project 2: Mobile App Design</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://i.postimg.cc/gjh1wBQ0/08062880642-20241210-003418-0000.png" alt="Project 3">
+          <p>Project 3: Branding Project</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://i.postimg.cc/3NZCbXDB/Canva-Web-Template-Makeup-Artist-Profile-Graphics-38946709-1-1-580x386.jpg" alt="Project 4">
+          <p>Project 4: Portfolio Website</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://i.postimg.cc/YqwsnRT1/56d323773c3b5a3c1a0c44bd10ea990c.jpg" alt="Project 5">
+          <p>Project 5: Corporate Identity</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://i.postimg.cc/XqBQHGk1/68534273023dcf83cc593dcdc3092313.jpg" alt="Project 6">
+          <p>Project 6: Social Media Campaign</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://i.postimg.cc/gjh1wBQ0/08062880642-20241210-003418-0000.png" alt="Project 7">
+          <p>Project 7: Landing Page Design</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://i.postimg.cc/90cyTDNq/a79b16af8d1f9fdb470852d862a92e8c.jpg" alt="Project 8">
+          <p>Project 8: Dashboard UI</p>
+        </div>
+          <div class="portfolio-item">
+          <img src="https://i.postimg.cc/4xW23gy5/fa22114eca7024c4fba579e8e96bbf11.jpg" alt="Project 8">
+          <p>Project 9: Dashboard UX</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Unwana Monday Effiong. All rights reserved.</p>
+    </footer>
+</body>
+</html>
